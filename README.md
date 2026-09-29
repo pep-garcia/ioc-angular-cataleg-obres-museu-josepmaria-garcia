@@ -13,11 +13,11 @@
 
 ## Versions utilitzades
 
-- Angular CLI : 22.2.0
+- **Angular CLI** : 22.2.0
 
-- Angular : 22.2.0
+- **Angular** : 22.2.0
 
-- Node.js : 24.15.0
+- **Node.js** : 24.15.0
 
 ## Com crear i executar el projecte
 
@@ -33,4 +33,5 @@
 
 ## Enllaç del repositori
 
-- [ra1-setup](https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra1-setup)
+- Arrel: https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia
+- Branca ra1-setup: https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra1-setup
