@@ -27,7 +27,7 @@
 
 - http://localhost:4200/
 
-## Estat del projecte
+## Estat de l'EAC1
 
 - Projecte base llest
 
