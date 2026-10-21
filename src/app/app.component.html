@@ -1,18 +1,34 @@
-<main class="app-shell">
-  <section class="intro">
-    <h1>{{ nomAplicacio }}</h1>
-    <p>Aplicació creada per Josep Maria Garcia per al mòdul DA2_OA01.</p>
+<header class="capcalera">
+  <h1>Catàleg d'Obres</h1>
+  <p>Unitat 2 - Components i interfície</p>
+</header>
+
+<main class="contenidor">
+  <section class="resultats">
+    <h2>Elements</h2>
+    <app-llista-elements
+      [elements]="elements"
+      [elementSeleccionatId]="elementSeleccionat?.id"
+      (selecciona)="seleccionaElement($event)"
+    />
   </section>
 
-  <section class="project-card">
-    <h2>Dades del projecte</h2>
-    <p>Estat: Projecte base llest</p>
-    <p>Framework: Angular 22</p>
-  </section>
-
-  <aside class="note">
-    <p>Nota: aquest projecte s'ampliarà durant el mòdul.</p>
+  <aside class="detall" aria-live="polite">
+    <h2>Detall</h2>
+    @if (elementSeleccionat) {
+      <h3>{{ elementSeleccionat.titol }}</h3>
+      <p>{{ elementSeleccionat.descripcio }}</p>
+      <ul>
+        <li><strong>Categoria:</strong> {{ elementSeleccionat.categoria }}</li>
+        <li><strong>Valor:</strong> {{ elementSeleccionat.valoracioEconomica }} €</li>
+      </ul>
+      <button type="button" (click)="tancaDetall()">Tanca el detall</button>
+    } @else {
+      <p>Seleccioneu una obra per veure'n el detall.</p>
+    }
   </aside>
 </main>
+
+<router-outlet />
 
 <router-outlet />
