@@ -34,6 +34,9 @@
     margin-top: 0.5rem;
   }
 }
+.filtres-zona {
+  grid-column: 1 / -1;
+}
 
 @media (max-width: 900px) {
   .contenidor {

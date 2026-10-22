@@ -4,10 +4,14 @@
 </header>
 
 <main class="contenidor">
+  <app-barra-filtres
+    class="filtres-zona"
+    (filtresCanviats)="actualitzarFiltres($event)"
+  ></app-barra-filtres>
   <section class="resultats">
-    <h2>Elements</h2>
+    <h2>Obres</h2>
     <app-llista-elements
-      [elements]="elements"
+      [elements]="elementsFiltrats"
       [elementSeleccionatId]="elementSeleccionat?.id"
       (selecciona)="seleccionaElement($event)"
     />
@@ -28,7 +32,5 @@
     }
   </aside>
 </main>
-
-<router-outlet />
 
 <router-outlet />
