@@ -14,7 +14,7 @@
   <p>{{ element.descripcio }}</p>
   <p class="valoracio">
     ★
-    {{ element.valoracioEconomica }}
+    {{ element.valoracioEconomica | number: '1.2-2' }} €
   </p>
 
   <button type="button" (click)="avisaSeleccio()">Veure detall</button>

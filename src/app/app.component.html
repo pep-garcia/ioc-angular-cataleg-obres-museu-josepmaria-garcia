@@ -9,12 +9,37 @@
     (filtresCanviats)="actualitzarFiltres($event)"
   ></app-barra-filtres>
   <section class="resultats">
-    <h2>Obres</h2>
-    <app-llista-elements
-      [elements]="elementsFiltrats"
-      [elementSeleccionatId]="elementSeleccionat?.id"
-      (selecciona)="seleccionaElement($event)"
-    />
+    <h2>
+      Obres d'art
+      <span class="comptador" aria-live="polite">
+        {{ elementsFiltrats.length }} de {{ elements.length }}
+      </span>
+    </h2>
+
+    @if (filtresActuals.text || filtresActuals.categoria !== 'Totes') {
+      <p class="info-filtres">
+        Filtres actius:
+        @if (filtresActuals.text) {
+          text "{{ filtresActuals.text }}"
+        }
+        @if (filtresActuals.categoria !== 'Totes') {
+          categoria {{ filtresActuals.categoria }}
+        }
+      </p>
+    }
+    @if (elementsFiltrats.length > 0) {
+      <app-llista-elements
+        [elements]="elementsFiltrats"
+        [elementSeleccionatId]="elementSeleccionat?.id"
+        (selecciona)="seleccionaElement($event)"
+      />
+    } @else {
+      <div class="sense-resultats" role="status">
+        Cerca
+        <p>No s'ha trobat cap obra d'art amb aquests filtres.</p>
+        <p>Proveu un altre text o trieu la categoria "Totes"</p>
+      </div>
+    }
   </section>
 
   <aside class="detall" aria-live="polite">
