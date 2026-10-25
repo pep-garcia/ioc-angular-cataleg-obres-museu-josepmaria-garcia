@@ -1,14 +1,16 @@
+<a href="#contingut-principal" class="skip-link">Saltar al contingut principal</a>
+
 <header class="capcalera">
   <h1>Catàleg d'Obres</h1>
   <p>Unitat 2 - Components i interfície</p>
 </header>
 
-<main class="contenidor">
-  <app-barra-filtres
-    class="filtres-zona"
-    (filtresCanviats)="actualitzarFiltres($event)"
-  ></app-barra-filtres>
-  <section class="resultats">
+<main id="contingut-principal" class="contenidor">
+  <nav class="filtres-zona" aria-label="Filtres del catàleg d'obres">
+    <app-barra-filtres (filtresCanviats)="actualitzarFiltres($event)"></app-barra-filtres>
+  </nav>
+
+  <section class="resultats" aria-label="Resultats">
     <h2>
       Obres d'art
       <span class="comptador" aria-live="polite">
@@ -42,7 +44,7 @@
     }
   </section>
 
-  <aside class="detall" aria-live="polite">
+  <aside class="detall" aria-live="polite" aria-label="Detall de l'obra">
     <h2>Detall</h2>
     @if (elementSeleccionat) {
       <h3>{{ elementSeleccionat.titol }}</h3>

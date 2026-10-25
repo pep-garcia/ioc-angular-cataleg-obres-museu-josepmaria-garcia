@@ -1,4 +1,6 @@
-# Nom de l'aplicació
+# Catàleg d'obres d'Art - Unitat 2
+
+## Nom de l'aplicació
 
 - cataleg-obres-museu
 
@@ -19,19 +21,44 @@
 
 - **Node.js** : 24.15.0
 
-## Com crear i executar el projecte
+## Funcionalitats
 
-- Crear projecte: ng new ioc-angular-cataleg-obres-museu-josepmaria-garcia --routing --style=scss --ssr=false --standalone=true --file-name-style-guide=2016 --skip-git=true --package-manager=npm
+- ✅ Targeta reutilitzable amb subcomponent d'etiqueta
+- ✅ Llistat dinàmic amb iteració optimitzada i panell de detall
+- ✅ Formulari de filtres (text i categoria) amb validacions i restabliment
+- ✅ Filtratge combinat
+- ✅ Estats visuals (buit, resultats)
+- ✅ Mesures d'accessibilitat implementades (labels, ARIA, teclat, focus visible)
+- ✅ Responsive design
 
-- Executar projecte: ng serve
+## Estructura del projecte
 
-- http://localhost:4200/
+```
+src/app/
+├── models/
+│   └── element.model.ts          # Interfície Element
+├── mocks/
+│   └── dades-mock.ts              # Dades simulades (10 elements)
+├── components/
+│   ├── etiqueta-element/          # Subcomponent etiqueta (badge)
+│   ├── targeta-element/           # Component targeta (@Input/@Output)
+│   ├── llista-elements/           # Component llistat (@for, @empty)
+│   └── barra-filtres/             # Formulari de filtres (FormsModule)
+└── app.component.*                # Component arrel (estat, filtratge, detall)
+```
 
-## Estat de l'EAC1
+## Execució
 
-- Projecte base llest
+```bash
+npm install
+ng serve --open
+```
+
+Aplicació disponible a `http://localhost:4200`
 
 ## Enllaç del repositori
 
-- Arrel: https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia
-- Branca ra1-setup: https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra1-setup
+- Arrel:
+  - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia
+- Branca ra2-components:
+  - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra2-components
