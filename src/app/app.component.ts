@@ -46,7 +46,9 @@ export class App {
     }
   }
   private conteText(element: Element, text: string): boolean {
-    const contingut = `${element.titol} ${element.descripcio}`.toLocaleLowerCase('ca');
+    const contingut = `${element.titol} ${element.descripcio} ${element.autor}`.toLocaleLowerCase(
+      'ca',
+    );
     return contingut.includes(text);
   }
 }
