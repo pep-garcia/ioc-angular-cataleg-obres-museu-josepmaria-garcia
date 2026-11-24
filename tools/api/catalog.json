@@ -1,0 +1,126 @@
+{
+  "elements": [
+    {
+      "id": "met-436535",
+      "title": "Wheat Field with Cypresses ",
+      "description": "Vincent van Gogh painted this landscape in 1889 while he was in Saint-Rémy, France.",
+      "category": "painting",
+      "author": "Vincent van Gogh",
+      "price": 5000000,
+      "image": "https://placehold.co/400x300?text=Wheat+Field+with+Cypresses",
+      "featured": true,
+      "acquisitionYear": 1993
+    },
+    {
+      "id": "met-437394",
+      "title": "Young Woman with a Water Pitcher",
+      "description": "This painting is one of Vermeer's most celebrated works.",
+      "category": "painting",
+      "author": "Johannes Vermeer",
+      "price": 8500000,
+      "image": "https://placehold.co/400x300?text=Young+Woman+with+a+Water+Pitcher",
+      "featured": true,
+      "acquisitionYear": 1889
+    },
+    {
+      "id": "met-436155",
+      "title": "The Little Fourteen-Year-Old Dancer",
+      "description": "Edgar Degas created this sculpture of a young ballet student.",
+      "category": "sculpture",
+      "author": "Edgar Degas",
+      "price": 1200000,
+      "image": "https://placehold.co/400x300?text=The+Little+Fourteen-Year-Old+Dancer",
+      "featured": false,
+      "acquisitionYear": 1929
+    },
+    {
+      "id": "met-435809",
+      "title": "Madame Cézanne in a Red Dress",
+      "description": "Paul Cézanne painted his wife Hortense in this striking red dress.",
+      "category": "painting",
+      "author": "Paul Cézanne",
+      "price": 3400000,
+      "image": "https://placehold.co/400x300?text=Madame+Cézanne+in+a+Red+Dress",
+      "featured": false,
+      "acquisitionYear": 1962
+    },
+    {
+      "id": "met-435810",
+      "title": "The Death of Socrates",
+      "description": "Jacques Louis David depicts the final moments of the Greek philosopher.",
+      "category": "painting",
+      "author": "Jacques Louis David",
+      "price": 7800000,
+      "image": "https://placehold.co/400x300?text=The+Death+of+Socrates",
+      "featured": true,
+      "acquisitionYear": 1931
+    },
+    {
+      "id": "met-200739",
+      "title": "Perseus with the Head of Medusa",
+      "description": "Antonio Canova's marble masterpiece depicts the Greek hero Perseus.",
+      "category": "sculpture",
+      "author": "Antonio Canova",
+      "price": 4500000,
+      "image": "https://placehold.co/400x300?text=Perseus+with+the+Head+of+Medusa",
+      "featured": false,
+      "acquisitionYear": 1967
+    },
+    {
+      "id": "met-541620",
+      "title": "The Unicorn Tapestries",
+      "description": "A set of seven tapestries depicting the hunt of the unicorn.",
+      "category": "textile",
+      "author": "Anonymous",
+      "price": 9500000,
+      "image": "https://placehold.co/400x300?text=The+Unicorn+Tapestries",
+      "featured": true,
+      "acquisitionYear": 1937
+    },
+    {
+      "id": "met-436947",
+      "title": "Washington Crossing the Delaware",
+      "description": "Emanuel Leutze's iconic painting of George Washington during the American Revolution.",
+      "category": "painting",
+      "author": "Emanuel Leutze",
+      "price": 6200000,
+      "image": "https://placehold.co/400x300?text=Washington+Crossing+the+Delaware",
+      "featured": false,
+      "acquisitionYear": 1897
+    },
+    {
+      "id": "met-11417",
+      "title": "Ugolino and His Sons",
+      "description": "Jean-Baptiste Carpeaux's sculpture based on Dante's Inferno.",
+      "category": "sculpture",
+      "author": "Jean-Baptiste Carpeaux",
+      "price": 2100000,
+      "image": "https://placehold.co/400x300?text=Ugolino+and+His+Sons",
+      "featured": false,
+      "acquisitionYear": 1967
+    },
+    {
+      "id": "met-437984",
+      "title": " Self-Portrait with a Straw Hat ",
+      "description": "Van Gogh painted this self-portrait in Paris in 1887.",
+      "category": "painting",
+      "author": "Vincent van Gogh",
+      "price": 4100000,
+      "image": "https://placehold.co/400x300?text=Self-Portrait+with+a+Straw+Hat",
+      "featured": true,
+      "acquisitionYear": 1967
+    },
+    {
+      "title": "Nova Obra",
+      "description": "Nou element afegit al catàleg",
+      "category": "painting",
+      "author": "Nou Autor",
+      "price": 1,
+      "image": "https://placehold.co/300x200?text=Nou%20Autor",
+      "featured": false,
+      "acquisitionYear": 2000,
+      "id": "aSwqP1jYbEk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

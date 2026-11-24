@@ -1,4 +1,4 @@
-# Catàleg d'obres d'Art - Unitat 2
+# Catàleg d'obres d'Art - Unitat 3
 
 ## Nom de l'aplicació
 
@@ -23,28 +23,27 @@
 
 ## Funcionalitats
 
-- ✅ Targeta reutilitzable amb subcomponent d'etiqueta
-- ✅ Llistat dinàmic amb iteració optimitzada i panell de detall
-- ✅ Formulari de filtres (text i categoria) amb validacions i restabliment
-- ✅ Filtratge combinat
-- ✅ Estats visuals (buit, resultats)
-- ✅ Mesures d'accessibilitat implementades (labels, ARIA, teclat, focus visible)
-- ✅ Responsive design
+- ✅ API mock amb `json-server` (`catalog.json` al port `4301`) i gestió centralitzada d'errors HTTP
+- ✅ Models d'entrada/sortida, adaptadors de transformació (`adaptarElementApi`, `adaptarElementsApi`, `elementBuit`) i taula de mapeig de camps
+- ✅ Servei `ElementService` amb `signals`, cerca reactiva amb `Subject` i `switchMap`, reintent i alta (`POST`)
+- ✅ Formulari reactiu `FormulariCercaComponent` amb validació síncrona (`minLength(3)`) i asíncrona (`termeAmbResultatsValidator` amb `timer(400)` + `switchMap`)
+- ✅ Documentació tècnica a `docs/serveis.md`, `docs/models.md` i `docs/formularis.md`
 
 ## Estructura del projecte
 
 ```
+docs/
+├── formularis.md                 # FormulariCercaComponent i validacions
+├── models.md                     # Interfícies, adaptadors i mapeig de camps
+└── serveis.md                    # Configuració API mock i ElementService
+tools/
+└── api/
+    └── catalog.json              # Dades de l'API mock (port 4301)
 src/app/
-├── models/
-│   └── element.model.ts          # Interfície Element
-├── mocks/
-│   └── dades-mock.ts              # Dades simulades (10 elements)
-├── components/
-│   ├── etiqueta-element/          # Subcomponent etiqueta (badge)
-│   ├── targeta-element/           # Component targeta (@Input/@Output)
-│   ├── llista-elements/           # Component llistat (@for, @empty)
-│   └── barra-filtres/             # Formulari de filtres (FormsModule)
-└── app.component.*                # Component arrel (estat, filtratge, detall)
+├── models/                       # Models del domini i respostes de l'API
+├── adaptadors/                   # Adaptadors de dades API <-> aplicació
+├── services/                     # ElementService i lògica d'estat/HTTP
+└── components/                   # Components i formularis de l'aplicació
 ```
 
 ## Execució
@@ -55,10 +54,11 @@ ng serve --open
 ```
 
 Aplicació disponible a `http://localhost:4200`
+API mock disponible a `http://localhost:4301`
 
 ## Enllaç del repositori
 
 - Arrel:
   - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia
-- Branca ra2-components:
+- Branca ra3-serveis:
   - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra2-components
