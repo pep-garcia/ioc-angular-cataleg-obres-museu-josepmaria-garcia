@@ -61,4 +61,4 @@ API mock disponible a `http://localhost:4301`
 - Arrel:
   - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia
 - Branca ra3-serveis:
-  - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra2-components
+  - https://github.com/pep-garcia/ioc-angular-cataleg-obres-museu-josepmaria-garcia/tree/ra3-serveis
